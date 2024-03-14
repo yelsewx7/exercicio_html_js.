@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!--  Declara o tipo de documento html  -->
+<html lang="pt-BR"> <!--  Define a linguagem do documento  -->
+<head>
+    <meta charset="UTF-8"> <!--  Define o conjunto de caracteres como utf-8  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  Configura a viewport para ajustar automaticamente à largura do dispositivo  -->
+    <title>HTML com JS</title> <!--  Define o título da página  -->
+    <link rel="stylesheet" href="./main.css" /> <!-- Importa o estilo css  -->
+</head>
+
+<body> <!--  Contém o conteúdo da página  -->
+    <div class="center"> <!--  Cria uma div com a classe center para centralizar o documento  -->
+        <h1>Integrando HTML com JavaScript</h1> <!--  Titulo principal  -->
+        <h2>Validação no JavaScript</h2> <!-- Titulo secundário   -->
+        <form id="valid-form">  <!-- Inicia um formulário com ID "valid-form" -->          
+            <label for="campoA"> Campo A </label> <!--  Rótulo do campo A  -->
+            <input type="number" id="campoA" required placeholder="Campo A" /> <!-- Campo de entrada para o campo A   -->
+            <label for="campoB">Campo B</label> <!--  Rótulo do campo B  -->
+            <input type="number" id="campoB" required placeholder="Campo B" /> <!-- Campo de entrada para o campo A   -->
+            <p class="error-message">O valor B precisa ser maior que o valor A </p> <!-- Paragrafo de mensagem de erro   -->
+            <p class="success-message">Enviado com sucesso. </p> <!-- Paragrafo de mensagem de sucesso   -->
+            <button type="submit">Enviar</button> <!-- Botão de envio para validar o formulário   -->
+        </form>
+    </div>
+    <script src="main.js"></script> <!-- Inclui o arquivo js   -->
+</body>
+
+</html>
